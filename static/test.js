@@ -94,16 +94,44 @@ document.addEventListener('DOMContentLoaded', function () {
                     } 
                 } });
     }
+
+
+    function update_stats(topic, correct) { 
+        fetch('/update_stats', { 
+            method: 'POST', 
+            headers: { 
+                'Content-Type': 'application/json' 
+            }, 
+            body: JSON.stringify({ 
+                topic: topic, 
+                correct: correct 
+            }) 
+        }) 
+        .then(response => response.json()) 
+        .then(data => { 
+            console.log('Success:', data); 
+        }) 
+        .catch((error) => { 
+            console.error('Error:', error); 
+        }); 
+    }
+
+
+
+
+
     function check_ans(selected_ans, topic) {
         const check = document.createElement('p');
         if (selected_ans === correct_ans) {
             check.textContent = "Correct!";
+            update_stats(topic, true);
         }
         else {
             check.textContent = `Wrong! Correct ans: ${correct_ans}\n`;
             topic_no = search_topic(result, topic);
             if (topic_no != -1) {
                 result[topic_no].count++;
+                update_stats(topic, false);
             }
             // else{
             //     check.textContent += "Topic not found";
