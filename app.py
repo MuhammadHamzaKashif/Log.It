@@ -15,8 +15,16 @@ def get_db_connection():
 def index():
     return render_template('index.html')
 
+@app.route('/test')
+def test():
+    return render_template('test.html')
+
 @app.route('/learn')
 def learn():
+    return render_template('learn.html')
+
+@app.route('/topics')
+def send_qs():
     arr = []
     dir_path = 'static/DiscreteMathematics.wiki'
 

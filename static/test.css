@@ -100,18 +100,18 @@ li {
     left: 300px;
     font-size: 24px;
     align-items: center;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-#content.visible {
     opacity: 1;
-    transform: translateY(0);
+    animation-name: start;
+    animation-duration: 1s;
 }
-#content.hidden {
-    opacity: 0;
-    transform: translateY(20px);
+@keyframes start {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
 }
 
 #copyright {

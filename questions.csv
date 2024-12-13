@@ -1,56 +1,29 @@
 Statement,Answer,Topic
 
-"What is the number of subsets of a set with 5 elements? a) 5 b) 10 c) 25 d) 32", d, "Set Theory"
+"What is the time complexity of the binary search algorithm in the worst case? a) O(n) b) O(log n) c) O(n^2) d) O(1)", b, "Algorithms"
 
-"Which of the following is a valid implication in propositional logic? a) ( p → (q ^ r) ) b) ( p ^ (q → r) ) c) ( p → q ^ r ) d) ( p ^ q → r )", a, "Propositional Logic"
+"Which of the following is a property of a Binary Search Tree (BST)? a) The left subtree of a node contains only nodes with keys less than the node’s key b) The right subtree of a node contains only nodes with keys less than the node’s key c) The left subtree of a node contains only nodes with keys greater than the node’s key d) None of the above", a, "Binary-Search-Tree"
 
-"In a directed graph, if every vertex has the same in-degree and out-degree, the graph is called: a) Eulerian b) Hamiltonian c) Regular d) Bipartite", c, "Graph Theory"
+"If f: A → B is a one-to-one (injective) function and A has 5 elements, how many elements does the set B have at least? a) 3 b) 4 c) 5 d) 6", c, "Functions-and-Relations"
 
-"The principle of mathematical induction is used to prove: a) Theorems involving natural numbers b) Theorems involving real numbers c) Theorems involving complex numbers d) Theorems involving matrices", a, "Mathematical Induction"
+"In a simple graph, what is the maximum number of edges possible with 5 vertices? a) 5 b) 10 c) 15 d) 20", b, "Graphs"
 
-"Which of the following is a bijective function? a) 𝑓: 𝑁 → 𝑁 defined by 𝑓( 𝑛 ) = 𝑛 + 1 b) 𝑓: 𝑅 → 𝑅 defined by 𝑓( 𝑥 ) = 𝑥2 c) 𝑓: 𝑍 → 𝑍 defined by 𝑓( 𝑛 ) = 2𝑛 d) 𝑓: 𝑅 → 𝑅 defined by 𝑓( 𝑥 ) = 𝑥 + 1", d, "Functions"
+"Which of the following is an example of an inference rule? a) Modus Ponens b) De Morgan's Laws c) Double Negation d) Commutative Law", a, "Inference"
 
-"In a lattice, the meet and join operations correspond to: a) Addition and subtraction b) Multiplication and division c) Minimum and maximum d) Union and intersection", c, "Lattices"
+"Which of the following propositions is logically equivalent to ¬(p ∨ q)? a) ¬p ∨ ¬q b) ¬p ∧ q c) ¬p ∧ ¬q d) p ∧ ¬q", c, "Logical-Equivalence"
 
-"The number of edges in a complete bipartite graph K_{3,4} is: a) 7 b) 12 c) 11 d) 10", b, "Graph Theory"
+"Which of the following statements is true for mathematical induction? a) It is used to prove the base case b) It is used to prove the inductive step c) It is used to prove the base case and inductive step d) None of the above", c, "Mathematical-Induction"
 
-"Which of the following sets is **not** closed under the operation of addition? a) Natural numbers b) Integers c) Rational numbers d) Irrational numbers", d, "Set Theory"
-   
-"In graph theory, a complete graph is a graph in which: a) There is a path between any two nodes b) Every node has the same number of edges c) Every pair of nodes is connected by a unique edge d) There are no cycles", c, "Graph Theory"
-   
-"The chromatic number of a graph is defined as: a) The minimum number of colors needed to color the graph such that no two adjacent vertices share the same color b) The maximum number of colors needed to color the graph c) The sum of the degrees of all vertices d) The total number of edges in the graph", a, "Graph Theory"
-   
-"Which of the following propositions is a tautology? a) P ∧ ¬P b) P ∨ ¬P c) P → P d) ¬P → P", b, "Propositional Logic"
-   
-"In set theory, the power set of a set A is: a) The set of all subsets of A b) The set of all elements of A c) The set of all ordered pairs of A d) The set of all ordered pairs of the elements in A", a, "Set Theory"
-   
-"Which of the following is an example of a bijective function? a) f(x) = x² from R to R b) f(x) = eˣ from R to R⁺ c) f(x) = sin(x) from R to [-1, 1] d) f(x) = 2x + 3 from R to R", d, "Functions"
-   
-"The number of elements in the Cartesian product of sets A and B, where |A| = 3 and |B| = 4, is: a) 7 b) 12 c) 1 d) 0", b, "Set Theory"
-   
-"Which of the following is true for an Eulerian graph? a) All vertices have even degree b) All vertices have odd degree c) The graph is complete d) The graph has exactly two vertices of odd degree", a, "Graph Theory"
-   
-"In propositional logic, the contrapositive of the implication P → Q is: a) ¬P → ¬Q b) Q → P c) ¬Q → ¬P d) P ↔ Q", c, "Propositional Logic"
-   
-"The principle of inclusion-exclusion is used to calculate: a) The intersection of sets b) The union of sets c) The number of elements in the complement of a set d) The number of elements in the union of sets considering overlaps", d, "Set Theory"
+"Which of the following is a proposition with variables? a) p → q b) p ∨ q c) p ∧ q d) ∀x(P(x) → Q(x))", d, "Proposition-with-variables"
 
+"Which of the following is a valid implication in propositional logic? a) ( p → (q ∧ r) ) b) ( p ∧ (q → r) ) c) ( p → q ∧ r ) d) ( p ∧ q → r )", a, "Proposition"
 
-"If a relation \(R\) on a set \(A\) is transitive, which of the following must be true? a) If \(aRb\) and \(bRc\), then \(aRc\) b) If \(aRb\), then \(bRa\) c) If \(aRb\), then \(bRa\) d) If \(aRc\), then \(bRc\)", a, "Relations"
+"Which of the following is used in tree traversal? a) Preorder b) Inorder c) Postorder d) All of the above", d, "Tree-Traversals"
 
-"Which of the following is not a property of an equivalence relation? a) Reflexivity b) Symmetry c) Transitivity d) Anti-symmetry", d, "Relations"
+"Which of the following data structures is used in the implementation of trees? a) Arrays b) Linked Lists c) Queues d) Stacks", b, "Tree-Implementation"
 
-"In a Boolean algebra, the complement of an element \(a\) is defined as: a) \(a \lor 1\) b) \(a \land 0\) c) \(\neg a\) d) \(a \rightarrow a\)", c, "Boolean Algebra"
+"In a binary tree, each node can have a maximum of how many children? a) 1 b) 2 c) 3 d) 4", b, "Trees"
 
-"The number of vertices in a binary tree of height \(h\) is at most: a) \(2^h - 1\) b) \(2^{h+1} - 1\) c) \(2^{h-1}\) d) \(2h - 1\)", b, "Trees"
+"Which of the following is an example of a rational number? a) π b) e c) √2 d) 1/2", d, "Types-of-Numbers"
 
-"A spanning tree of a connected graph with \(n\) vertices and \(m\) edges has: a) \(n-1\) edges b) \(m-1\) edges c) \(n-m\) edges d) \(m-n\) edges", a, "Graph Theory"
-
-"Which of the following is a tautology? a) \(P \land \neg P\) b) \(P \lor \neg P\) c) \(P \rightarrow \neg P\) d) \(\neg P \rightarrow P\)", b, "Propositional Logic"
-
-"The number of permutations of the set \(\{1, 2, 3, 4\}\) is: a) 12 b) 16 c) 24 d) 32", c, "Combinatorics"
-
-"In a directed acyclic graph (DAG), which of the following is true? a) It has at least one cycle b) It has a topological ordering c) Every vertex has a self-loop d) It is strongly connected", b, "Graph Theory"
-
-"The Big-O notation for the time complexity of the binary search algorithm is: a) \(O(n)\) b) \(O(\log n)\) c) \(O(n^2)\) d) \(O(1)\)", b, "Algorithms"
-
-"In a group \(G\), the inverse of an element \(a\) is denoted by: a) \(a^2\) b) \(a^{-1}\) c) \(\neg a\) d) \(a'\)", b, "Group Theory"
+"Which of the following is a type of proof used in mathematics? a) Direct Proof b) Indirect Proof c) Proof by Contradiction d) All of the above", d, "Types-of-Proofs"
