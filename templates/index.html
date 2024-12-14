@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="/static/style.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="/static/script.js"></script>
-    
-
 </head>
 <body>
     <div id="navbar">
@@ -31,17 +29,46 @@
         <li id="result" class="list-group-item"><a href="/result">Result</a></li>
         <li class="list-group-item">A fourth item</li>
         <li class="list-group-item">A fifth one</li>
-      </ul>
+    </ul>
 
 
-      <div id="content">
-        
-      </div>
+
+    <div id="content">
+        <div id="slideshow">
+            <div class="slide fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="/static/img/slide1.jpg" style="width:100%">
+                <div class="text">Welcome to edu</div>
+            </div>
+    
+            <div class="slide fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="/static/img/slide2.jpg" style="width:100%">
+                <div class="text">Test Your Knowledge</div>
+            </div>
+    
+            <div class="slide fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="/static/img/slide3.jpg" style="width:100%">
+                <div class="text">Learn New Skills</div>
+            </div>
+    
+            <div class="slide fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="/static/img/slide4.jpg" style="width:100%">
+                <div class="text">Track Your Progress</div>
+            </div>
+    
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+        </div>
+    </div>
+    <div id="popup" class="popup">Popup Content</div>
 
     <div id="copyright">
         @copyright HamzaK UmerT | 2024
     </div>
+
+    <script src="/static/slideshow.js"></script>
 </body>
 </html>
-
-
