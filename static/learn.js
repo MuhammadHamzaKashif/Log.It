@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(){
     const content = document.getElementById('content');
+    const toc = document.getElementById('toc');
 
     if (!content.classList.contains('visible')) {
         const a = document.createElement('h2');
@@ -51,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function(){
             })
             .then(html => {
                 content.innerHTML = html;
+                toc.style.height = `${content.offsetHeight + 180}px`;
                 content.classList.remove('visible');
                 content.classList.add('hidden');
                 setTimeout(() => {

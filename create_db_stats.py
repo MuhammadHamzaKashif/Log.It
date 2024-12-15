@@ -11,12 +11,13 @@ cursor.execute('''
 CREATE TABLE IF NOT EXISTS stats (
     topic TEXT,
     correct INT,
-    wrong INT
+    wrong INT,
+    time INT
 )
 ''')
 for i in range(lim):
-    cursor.execute('INSERT INTO stats (topic, correct, wrong) VALUES (?, ?, ?)',
-               (data.iloc[i].topic, data.iloc[i].correct, data.iloc[i].wrong))
+    cursor.execute('INSERT INTO stats (topic, correct, wrong, time) VALUES (?, ?, ?, ?)',
+               (data.iloc[i].topic, data.iloc[i].correct, data.iloc[i].wrong, data.iloc[i].time))
 
 connection.commit()
 connection.close()

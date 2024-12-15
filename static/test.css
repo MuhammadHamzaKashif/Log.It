@@ -203,3 +203,35 @@ button:active {
     transform: rotate(315deg);
     transition: left 0.5s ease-in-out;
   }
+
+  .popup {
+    position: absolute;
+    background-color: rgba(20, 20, 22, 0.9);
+    color: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 1000;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(-265px10px);
+}
+
+.popup.visible {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.popup::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -265px5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent rgba(20, 20, 22, 0.9);
+}

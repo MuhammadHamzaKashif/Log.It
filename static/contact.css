@@ -4,8 +4,9 @@
     margin: 0;
     padding: 0;
 }
+
 html, body {
-    height: 100%;
+    /* height: 100%; */
     margin: 0;
 }
 
@@ -31,6 +32,7 @@ body {
     animation-name: begin;
     animation-duration: 0.5s;
 }
+
 @keyframes begin {
     from {
         height: 0px;
@@ -73,13 +75,15 @@ li {
     display: block;
     margin-top: 100px;
     width: 15%;
-    height: 1166px;
+    height: 533px;
     padding: 23px;
     position: absolute;
-    left: -250px;
+    left: -265px;
     transition: left 0.5s ease-in-out;
+    z-index: 100;
 }
-#toc a{
+
+#toc a {
     text-decoration: none;
     padding: 12px 12px;
     color: rgb(241, 241, 241);
@@ -93,30 +97,43 @@ li {
 }
 
 #content {
-    width: 80%;
+    background-color: #1A1A1A;
+    color: aliceblue;
     flex: 1;
-    margin-top: 123px;
+    align-self: center;
+    margin-top: 100px;
     position: relative;
-    left: 300px;
-    font-size: 24px;
+    /* left: 300px; */
+    font-size: 22px;
     align-items: center;
-    opacity: 1;
-    animation-name: start;
-    animation-duration: 1s;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 12px;
 }
-@keyframes start {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-    
+
+#content a{
+    text-decoration: none;
+    padding: 12px 12px;
+    color: rgb(131 199 212);;
+}
+
+#content.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#content.hidden {
+    opacity: 0;
+    transform: translateY(20px);
 }
 
 #copyright {
     background-color: rgb(20, 20, 22);
     color: rgb(241, 241, 241);
+    position: absolute;
+    bottom: 0px;
     text-align: center;
     width: 100%;
     padding: 0 0;
@@ -125,8 +142,6 @@ li {
 
 #buttons {
     margin-top: 20px;
-    /* display: flex;
-    justify-content: center; */
 }
 
 button {
@@ -135,50 +150,40 @@ button {
     margin-right: 12px;
     background: rgb(20, 20, 22);
     color: rgb(241, 241, 241);
-}
-
-/* CSS */
-button {
-  appearance: none;
-  background-color: #000000;
-  border: 2px solid #1A1A1A;
-  border-radius: 15px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  font-weight: 600;
-  line-height: normal;
-  margin: 0;
-  min-height: 60px;
-  min-width: 0;
-  outline: none;
-  padding: 16px 24px;
-  text-align: center;
-  text-decoration: none;
-  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  /* width: 100%; */
-  margin-right: 20px;
-  will-change: transform;
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
 }
 
 button:disabled {
-  pointer-events: none;
+    pointer-events: none;
 }
 
 button:hover {
-  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-  transform: translateY(-2px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-265px2px);
 }
 
 button:active {
-  box-shadow: none;
-  transform: translateY(0);
+    box-shadow: none;
+    transform: translateY(0);
 }
 
 .hidden {
@@ -189,7 +194,6 @@ button:active {
     display: block;
 }
 
-
 #arrow-right {
     position: absolute;
     width: 33px;
@@ -199,16 +203,12 @@ button:active {
     border-top: 0;
     margin-top: 330px;
     margin-left: 25px;
-  
     transform: rotate(315deg);
     transition: left 0.5s ease-in-out;
-  }
-  .time_show{
-    display: flex;
-  }
+    z-index: 100;
+}
 
-
-  .popup {
+.popup {
     position: absolute;
     background-color: rgba(20, 20, 22, 0.9);
     color: #f1f1f1;
