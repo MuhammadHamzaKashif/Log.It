@@ -194,7 +194,7 @@ button:active {
     position: absolute;
     width: 33px;
     height: 33px;
-    border: 2px solid #333;
+    border: 2px solid #b6adad;
     border-left: 0;
     border-top: 0;
     margin-top: 330px;
@@ -216,7 +216,7 @@ button:active {
     z-index: 1000;
     transition: opacity 0.3s ease, transform 0.3s ease;
     opacity: 0;
-    transform: translateY(-265px10px);
+    transform: translateY(10px);
 }
 
 .popup.visible {
@@ -230,7 +230,7 @@ button:active {
     position: absolute;
     top: 50%;
     left: 100%;
-    margin-top: -265px5px;
+    margin-top: 5px;
     border-width: 5px;
     border-style: solid;
     border-color: transparent transparent transparent rgba(20, 20, 22, 0.9);
