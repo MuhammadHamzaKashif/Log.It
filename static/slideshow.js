@@ -22,6 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
         slides[slideIndex - 1].classList.add(n > slideIndex ? 'slide-right' : 'slide-left');
     }
 
-    // Automatic slideshow
-    setInterval(() => plusSlides(1), 5000); // Change slide every 5 seconds
+    
+    setInterval(() => plusSlides(1), 3000);
 });

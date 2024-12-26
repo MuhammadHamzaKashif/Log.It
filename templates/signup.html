@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log.It - Sign Up</title>
+    <link rel="stylesheet" href="/static/acknowledge.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="/static/script.js"></script>
+</head>
+<body>
+    <div id="navbar">
+        <div id="logo">
+            <div>
+                <h4 id="lname">Log.It</h4>
+            </div>
+        </div>
+        <div id="options">
+            <li><a href="/">Main</a></li>
+            <li><a href="/acknowledge">Acknowledgements</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </div>
+    </div>
+    <div id="arrow-right"></div>
+    <ul id="toc" class="hidden">
+        <li id="test" class="list-group-item"><a href="/test">Test</a></li>
+        <li id="learn" class="list-group-item"> <a href="/learn">Learn</a></li>
+        <li id="result" class="list-group-item"><a href="/result">Result</a></li>
+        <li id="rand_fact" class="list-group-item"><a href="/rand_fact">Random Fact</a></li>
+    </ul>
+    <div id="content">
+        <h1>Sign Up</h1>
+        <form action="/submit" method="post">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+                <label for="education">Education Status:</label>
+                <select id="education" name="education" required>
+                    <option value="high_school">High School</option>
+                    <option value="undergrad">Undergraduate</option>
+                    <option value="postgrad">Postgraduate</option>
+                </select>
+            </div>
+            <div>
+                <label for="major">Major:</label>
+                <select id="major" name="major" required>
+                    <option value="" disabled selected>Select your major</option>
+                    <option value="computer_science">Computer Science</option>
+                    <option value="electrical_engineering">Electrical Engineering</option>
+                    <option value="mechanical_engineering">Mechanical Engineering</option>
+                    <option value="civil_engineering">Civil Engineering</option>
+                    <option value="business_administration">Business Administration</option>
+                    <option value="economics">Economics</option>
+                    <option value="physics">Physics</option>
+                    <option value="mathematics">Mathematics</option>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="biology">Biology</option>
+                    <option value="medicine">Medicine</option>
+                    <option value="psychology">Psychology</option>
+                    <option value="law">Law</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div id="copyright">
+        @copyright HamzaK UmerT | 2024
+    </div>
+</body>
+</html>

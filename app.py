@@ -18,6 +18,14 @@ def row_to_dict(cursor, row):
 def index():
     return render_template('index.html')
 
+@app.route('/login')
+def login():
+    return render_template('login.html')
+
+@app.route('/signup')
+def signup():
+    return render_template('signup.html')
+
 @app.route('/acknowledge')
 def acknowledge():
     return render_template('acknowledge.html')
@@ -45,7 +53,7 @@ def rand_fact():
 @app.route('/topics')
 def send_qs():
     arr = []
-    dir_path = 'static/DiscreteMathematics.wiki'
+    dir_path = 'static/courses/DiscreteMathematics.wiki'
 
     file_names = os.listdir(dir_path)
 
@@ -118,7 +126,7 @@ def update_stats():
 
 @app.route('/info/<filename>')
 def get_mdinfo(filename):
-    file_path = f"static/DiscreteMathematics.wiki/{filename}.md"
+    file_path = f"static/courses/DiscreteMathematics.wiki/{filename}.md"
     if os.path.isfile(file_path):
         with open(file_path, 'r') as file:
             content = file.read()

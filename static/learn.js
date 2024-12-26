@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
                 setTimeout(() => {
                     content.classList.add('visible');
-                }, 10); //transition
+                }, 10);
 
             })
             .catch(error => console.error('Error fetching data:', error));
