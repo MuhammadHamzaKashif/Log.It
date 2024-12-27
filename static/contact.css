@@ -51,7 +51,7 @@ body {
 #lname {
     cursor: pointer;
     margin: 0px 25px;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 #options {
@@ -68,7 +68,7 @@ li {
     text-decoration: none;
     padding: 12px 12px;
     color: rgb(241, 241, 241);
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 #options li a:hover{

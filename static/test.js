@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 prev_result.push(a);
             });
         });
-    fetch('/topics')
+    fetch('/topics/Undergrad/DiscreteMathematics')
         .then(response => response.json())
         .then(data => {
             data.forEach(item => {
@@ -192,13 +192,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function update_stats(topic, correct, time_taken) {
         fetch('/update_stats', {
-            method: 'POST', headers: {
+            method: 'POST',
+            headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
                 topic: topic,
                 correct: correct,
-                time: time_taken
+                time: time_taken,
+                course_id: 1  // Assuming you have a default course_id for testing
             })
         })
             .then(response => response.json())
@@ -209,6 +211,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.error('Error:', error);
             });
     }
+    
 
     function check_ans(selected_ans, topic) {
         const check = document.createElement('p');
